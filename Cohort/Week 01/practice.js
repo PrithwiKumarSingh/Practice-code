@@ -49,11 +49,32 @@
 // // trim method using to remove extra space start and end point 
 
 
-//toUpperCase(), toLowerCase()
-const value = "Prihtwi Singh";
+// //toUpperCase(), toLowerCase()
+// const value = "Prihtwi Singh";
 
-//toUpperCase()
-console.log(value.toUpperCase());
+// //toUpperCase()
+// console.log(value.toUpperCase());
 
-//toLowerCase()
-console.log(value.toLowerCase());
+// //toLowerCase()
+// console.log(value.toLowerCase());
+
+//ParseInt & ParseFloat
+function expalinParseInt(value){
+    console.log("Original Value:", value);
+    let result = parseInt(value);
+    console.log("After parseInt:", result);
+}
+//Example Usage for parseInt
+console.log(expalinParseInt("42"));
+console.log(expalinParseInt("46px"));
+console.log(expalinParseInt("3.14"));
+
+function expalinParseFloat(value){
+    console.log("Original Value:", value);
+    let result = parseFloat(value);
+    console.log("After parseFloat:", result);
+}
+//Example Usage for parseInt
+console.log(expalinParseFloat("42"));
+console.log(expalinParseFloat("46px"));
+console.log(expalinParseFloat("3.14"));
