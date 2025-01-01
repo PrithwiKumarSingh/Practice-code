@@ -7,3 +7,4 @@ function findIndexOf(str, target){
     console.log("indes:", str.lastIndexOf(target));
 }
 findIndexOf("Hello World World", "World");
+
