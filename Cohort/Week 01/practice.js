@@ -79,21 +79,35 @@
 // console.log(expalinParseFloat("46px"));
 // console.log(expalinParseFloat("3.14"));
 
-// pop() push() shift() unshift()
-const arr = [1,2,3,4];
-console.log("original arr :", arr);
-// pop method using to add element to end
-const push = arr.push(5);
-console.log("after using push: ",arr);
+// // pop() push() shift() unshift()
+// const arr = [1,2,3,4];
+// console.log("original arr :", arr);
+// // pop method using to add element to end
+// const push = arr.push(5);
+// console.log("after using push: ",arr);
 
-//pop method using to remove element to end
-const pop = arr.pop(5);
-console.log("after using pop :",arr);
+// //pop method using to remove element to end
+// const pop = arr.pop(5);
+// console.log("after using pop :",arr);
 
-//shift method using to remove element to start
-const shift = arr.shift(5);
-console.log("after using shift :",arr);
+// //shift method using to remove element to start
+// const shift = arr.shift(5);
+// console.log("after using shift :",arr);
 
-//unshift method using to add element to start
-const unshift= arr.unshift(5);
-console.log("after using unshift :",arr);
+// //unshift method using to add element to start
+// const unshift= arr.unshift(5);
+// console.log("after using unshift :",arr);
+
+//Concat forEach 
+const initialArray = [1, 2, 3];
+const secondaryArray = [4, 5, 6];
+
+//concat
+let finalArray = initialArray.concat(secondaryArray);
+console.log(finalArray);
+
+//forEach
+function logThing(str){
+    console.log(str);
+}
+finalArray.forEach(logThing);
