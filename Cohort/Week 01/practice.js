@@ -32,18 +32,28 @@
 // console.log(ans2);
 // console.log(cutIt(value, 2, 5));  
 
-// replace split trim() method 
+// // replace split trim() method 
 
-const str = "hello world";
-let value = str.replace("world", "JavaScript");
-console.log(value);
-//replace("target", "value")
+// const str = "hello world";
+// let value = str.replace("world", "JavaScript");
+// console.log(value);
+// //replace("target", "value")
 
-const para = "Hi My Name Is Prithwi Singh"
-let res = para.split(" ");
-console.log(res);
-// split method using to convert in an array to particular arg. space, comma, and more
+// const para = "Hi My Name Is Prithwi Singh"
+// let res = para.split(" ");
+// console.log(res);
+// // split method using to convert in an array to particular arg. space, comma, and more
 
-const val = "    Prithwi Singh        ";
-console.log(val.trim());
-// trim method using to remove extra space start and end point 
+// const val = "    Prithwi Singh        ";
+// console.log(val.trim());
+// // trim method using to remove extra space start and end point 
+
+
+//toUpperCase(), toLowerCase()
+const value = "Prihtwi Singh";
+
+//toUpperCase()
+console.log(value.toUpperCase());
+
+//toLowerCase()
+console.log(value.toLowerCase());
