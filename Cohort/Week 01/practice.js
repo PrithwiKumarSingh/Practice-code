@@ -58,23 +58,42 @@
 // //toLowerCase()
 // console.log(value.toLowerCase());
 
-//ParseInt & ParseFloat
-function expalinParseInt(value){
-    console.log("Original Value:", value);
-    let result = parseInt(value);
-    console.log("After parseInt:", result);
-}
-//Example Usage for parseInt
-console.log(expalinParseInt("42"));
-console.log(expalinParseInt("46px"));
-console.log(expalinParseInt("3.14"));
+// //ParseInt & ParseFloat
+// function expalinParseInt(value){
+//     console.log("Original Value:", value);
+//     let result = parseInt(value);
+//     console.log("After parseInt:", result);
+// }
+// //Example Usage for parseInt
+// console.log(expalinParseInt("42"));
+// console.log(expalinParseInt("46px"));
+// console.log(expalinParseInt("3.14"));
 
-function expalinParseFloat(value){
-    console.log("Original Value:", value);
-    let result = parseFloat(value);
-    console.log("After parseFloat:", result);
-}
-//Example Usage for parseInt
-console.log(expalinParseFloat("42"));
-console.log(expalinParseFloat("46px"));
-console.log(expalinParseFloat("3.14"));
+// function expalinParseFloat(value){
+//     console.log("Original Value:", value);
+//     let result = parseFloat(value);
+//     console.log("After parseFloat:", result);
+// }
+// //Example Usage for parseInt
+// console.log(expalinParseFloat("42"));
+// console.log(expalinParseFloat("46px"));
+// console.log(expalinParseFloat("3.14"));
+
+// pop() push() shift() unshift()
+const arr = [1,2,3,4];
+console.log("original arr :", arr);
+// pop method using to add element to end
+const push = arr.push(5);
+console.log("after using push: ",arr);
+
+//pop method using to remove element to end
+const pop = arr.pop(5);
+console.log("after using pop :",arr);
+
+//shift method using to remove element to start
+const shift = arr.shift(5);
+console.log("after using shift :",arr);
+
+//unshift method using to add element to start
+const unshift= arr.unshift(5);
+console.log("after using unshift :",arr);
