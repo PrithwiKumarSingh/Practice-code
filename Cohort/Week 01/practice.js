@@ -260,47 +260,95 @@
 
 // ===============>>>  LOOPS & Functions  <<<=============
 
-//sum of n number
-let n = 50;
-let ans = 0;
-for(let i=0; i<n; i++){
-    ans += i;
+// //sum of n number
+// let n = 50;
+// let ans = 0;
+// for(let i=0; i<n; i++){
+//     ans += i;
+// }
+// console.log(ans);
+
+// // function 
+// let sum = 0;
+// function sumOfn(num){
+//     for(let i=0; i<num; i++){
+//         sum += i;
+//     }
+//     return sum;
+// }
+
+// let value = sumOfn(50);
+// console.log(value);
+
+// //creating a function loop to push black arr of n number and filtering the array odd 
+
+// let n = 50;
+// let arr = []; 
+// function storeArray(n){
+//     for(let i=1; i<=n; i++){
+//         arr.push(i);
+//     }
+// }
+// storeArray(n);
+// console.log(arr);
+
+// console.log("filtering odd")
+
+// let oddValue = [];
+// function odd(arr){
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i] % 2 == 0){
+//             oddValue.push(i);
+//         }
+//     }
+// }
+// odd(arr);
+// console.log(oddValue);
+
+// ===========>> Callback Function <<================
+
+function squre(a){
+    return a * a;
 }
-console.log(ans);
-
-// function 
-let sum = 0;
-function sumOfn(num){
-    for(let i=0; i<num; i++){
-        sum += i;
-    }
-    return sum;
+function cube(a){
+    return a * a * a;
 }
 
-let value = sumOfn(50);
-console.log(value);
-
-//creating a function loop to push black arr of n number and filtering the array odd 
-
-let n = 50;
-let arr = []; 
-function storeArray(n){
-    for(let i=1; i<=n; i++){
-        arr.push(i);
-    }
+function sumOfSqure(a, b){
+    let val1 = squre(a);
+    let val2 = squre(b);
+    return val1 + val2;
 }
-storeArray(n);
-console.log(arr);
-
-console.log("filtering odd")
-
-let oddValue = [];
-function odd(arr){
-    for(let i=0; i<arr.length; i++){
-        if(arr[i] % 2 == 0){
-            oddValue.push(i);
-        }
-    }
+function sumOfCube(a, b){
+    let val1 = cube(b);
+    let val2 = cube(a);
+    return val1 + val2;
 }
-odd(arr);
-console.log(oddValue);
+
+console.log(sumOfCube(2,4));
+console.log(sumOfSqure(2,4));
+
+
+// optomize upper code 
+
+function squre(a){
+    return a * a;
+}
+function cube(a){
+    return a * a * a;
+}
+
+function sumOfSomething(a, b, callback){
+    console.log(callback);
+    let val1 = callback(a);
+    let val2 = callback(b);
+    return val1 + val2;
+}
+
+console.log(sumOfSomething(2,3,squre));
+console.log(sumOfSomething(2,3,cube));
+
+// creating anonymous function 
+console.log(sumOfSomething(2,5, function (a){
+    return a * a * a;
+}))
