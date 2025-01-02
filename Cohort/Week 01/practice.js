@@ -178,46 +178,129 @@
 // console.log(finalString);
 
 
-// math( round, ceil, floor, random, max, min, pow, sqrt)
+// // math( round, ceil, floor, random, max, min, pow, sqrt)
 
 
-let value = 10.3;
-mathMethods(value);
-function mathMethods(value){
-    console.log("Original Value:", value);
+// let value = 10.3;
+// mathMethods(value);
+// function mathMethods(value){
+//     console.log("Original Value:", value);
+// }
+
+// // round of the given number closed one. 
+// let rounded = Math.round(value);
+// console.log("After round() : ", rounded);
+
+// // ceil is the gratest number throw
+// let ceilling = Math.ceil(value);
+// console.log("After ceil():", ceilling);
+
+// //flor is the floring value throw 
+// let flooring = Math.floor(value);
+// console.log("After flor():", flooring);
+
+// // random() generate a random number 
+// let randomValue = Math.random(value);
+// console.log("After random():", randomValue);
+// // generating number between 1 to 10
+// let random = Math.floor(Math.random() * 10) + 1;
+// console.log(random);
+
+// //max()throw maximum number
+// let maxValue = Math.max(12, 23, 45, 65);
+// console.log("After max(): ",maxValue);
+
+// //min() throw minimum number 
+// let minValue = Math.min(10, 20, 34, 4, 5,34);
+// console.log("After min(): ",minValue);
+
+// //pow(value, power number) 
+// let powerOfTwo = Math.pow(10, 3);
+// console.log("After pow():", powerOfTwo);
+
+// //sqrt(value) throw the value root 
+// let squreRoot = Math.sqrt(9);
+// console.log("After sqrt():", squreRoot);
+
+
+
+// // Object Methods Explanation
+// function objectMethods(obj) {
+//     console.log("Original Object:", obj);
+  
+//     let keys = Object.keys(obj);
+//     console.log("After Object.keys():", keys);
+  
+//     let values = Object.values(obj);
+//     console.log("After Object.values():", values);
+  
+//     let entries = Object.entries(obj);
+//     console.log("After Object.entries():", entries);
+  
+//     let hasProp = obj.hasOwnProperty("property");
+//     console.log("After hasOwnProperty():", hasProp);
+  
+//     let newObj = Object.assign({}, obj, { newProperty: "newValue" });
+//     console.log("After Object.assign():", newObj);
+  
+  
+//   }
+// const obj = {
+//     key1 : "value1",
+//     key2 : "Value2",
+//     key3 : "value3"
+// }
+// const sampleObject = {
+//     case1 : "prithwi",
+//     case2 : "raman",
+//     case3 : "Harkirat",
+// }
+// objectMethods(sampleObject);
+
+
+// ===============>>>  LOOPS & Functions  <<<=============
+
+//sum of n number
+let n = 50;
+let ans = 0;
+for(let i=0; i<n; i++){
+    ans += i;
+}
+console.log(ans);
+
+// function 
+let sum = 0;
+function sumOfn(num){
+    for(let i=0; i<num; i++){
+        sum += i;
+    }
+    return sum;
 }
 
-// round of the given number closed one. 
-let rounded = Math.round(value);
-console.log("After round() : ", rounded);
+let value = sumOfn(50);
+console.log(value);
 
-// ceil is the gratest number throw
-let ceilling = Math.ceil(value);
-console.log("After ceil():", ceilling);
+//creating a function loop to push black arr of n number and filtering the array odd 
 
-//flor is the floring value throw 
-let flooring = Math.floor(value);
-console.log("After flor():", flooring);
+let n = 50;
+let arr = []; 
+function storeArray(n){
+    for(let i=1; i<=n; i++){
+        arr.push(i);
+    }
+}
+storeArray(n);
+console.log(arr);
 
-// random() generate a random number 
-let randomValue = Math.random(value);
-console.log("After random():", randomValue);
-// generating number between 1 to 10
-let random = Math.floor(Math.random() * 10) + 1;
-console.log(random);
+console.log("filtering odd")
 
-//max()throw maximum number
-let maxValue = Math.max(12, 23, 45, 65);
-console.log("After max(): ",maxValue);
-
-//min() throw minimum number 
-let minValue = Math.min(10, 20, 34, 4, 5,34);
-console.log("After min(): ",minValue);
-
-//pow(value, power number) 
-let powerOfTwo = Math.pow(10, 3);
-console.log("After pow():", powerOfTwo);
-
-//sqrt(value) throw the value root 
-let squreRoot = Math.sqrt(9);
-console.log("After sqrt():", squreRoot);
+let oddValue = [];
+function odd(arr){
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] % 2 == 0){
+            oddValue.push(i);
+        }
+    }
+}
+odd(arr);
+console.log(oddValue);
