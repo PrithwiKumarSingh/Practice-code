@@ -98,16 +98,82 @@
 // const unshift= arr.unshift(5);
 // console.log("after using unshift :",arr);
 
-//Concat forEach 
-const initialArray = [1, 2, 3];
-const secondaryArray = [4, 5, 6];
+// //Concat forEach 
+// const initialArray = [1, 2, 3];
+// const secondaryArray = [4, 5, 6];
 
-//concat
-let finalArray = initialArray.concat(secondaryArray);
-console.log(finalArray);
+// //concat
+// let finalArray = initialArray.concat(secondaryArray);
+// console.log(finalArray);
 
-//forEach
-function logThing(str){
-    console.log(str);
+// //forEach
+// function logThing(str){
+//     console.log(str);
+// }
+// finalArray.forEach(logThing);
+
+
+
+//class  & Date & Json 
+
+class Animal {
+    constructor(name, legCount, speaks){
+        this.name = name;
+        this.legCount = legCount;
+        this.speaks = speaks;
+    }
+    //class speak()
+    speak() {
+        console.log("hi there " + this.speaks);
+    }
+    //class legCount
+    legCounts(){
+        console.log("legCount is : " + this.legCount);
+    }
 }
-finalArray.forEach(logThing);
+
+let dog = new Animal("dog", 4, "bhow bhow");
+let cat = new Animal("cat", 4, "meow meow");
+cat.speak();
+cat.legCounts();
+
+//Date
+const currentDate = new Date();
+console.log(currentDate.getMonth()+1);
+console.log(currentDate.getFullYear());
+console.log(currentDate.getDate());
+
+let date = currentDate.getDate();
+let month = currentDate.getMonth()+1;
+let year = currentDate.getFullYear();
+
+console.log(`Today- ${date}-${month}-${year}`);
+
+function calculatSum(){
+    let a = 0;
+    for(let i=0; i<100; i++){
+        a = a + i;
+    }
+    return a;
+}
+
+const beforeDate = new Date();
+const beforeTimeInMs = beforeDate.getTime();
+
+calculatSum();
+
+const afterDate = new Date();
+const afterTimeInMs = afterDate.getTime();
+
+console.log(afterTimeInMs - beforeTimeInMs);
+
+// Json --> JavaScript Object Notation
+
+const user = {
+    name : "prithwi",
+    gender: "male"
+}
+
+const finalString = JSON.stringify(user);
+console.log(finalString);
+
