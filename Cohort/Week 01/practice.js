@@ -114,66 +114,110 @@
 
 
 
-//class  & Date & Json 
+// //class  & Date & Json 
 
-class Animal {
-    constructor(name, legCount, speaks){
-        this.name = name;
-        this.legCount = legCount;
-        this.speaks = speaks;
-    }
-    //class speak()
-    speak() {
-        console.log("hi there " + this.speaks);
-    }
-    //class legCount
-    legCounts(){
-        console.log("legCount is : " + this.legCount);
-    }
+// class Animal {
+//     constructor(name, legCount, speaks){
+//         this.name = name;
+//         this.legCount = legCount;
+//         this.speaks = speaks;
+//     }
+//     //class speak()
+//     speak() {
+//         console.log("hi there " + this.speaks);
+//     }
+//     //class legCount
+//     legCounts(){
+//         console.log("legCount is : " + this.legCount);
+//     }
+// }
+
+// let dog = new Animal("dog", 4, "bhow bhow");
+// let cat = new Animal("cat", 4, "meow meow");
+// cat.speak();
+// cat.legCounts();
+
+// //Date
+// const currentDate = new Date();
+// console.log(currentDate.getMonth()+1);
+// console.log(currentDate.getFullYear());
+// console.log(currentDate.getDate());
+
+// let date = currentDate.getDate();
+// let month = currentDate.getMonth()+1;
+// let year = currentDate.getFullYear();
+
+// console.log(`Today- ${date}-${month}-${year}`);
+
+// function calculatSum(){
+//     let a = 0;
+//     for(let i=0; i<100; i++){
+//         a = a + i;
+//     }
+//     return a;
+// }
+
+// const beforeDate = new Date();
+// const beforeTimeInMs = beforeDate.getTime();
+
+// calculatSum();
+
+// const afterDate = new Date();
+// const afterTimeInMs = afterDate.getTime();
+
+// console.log(afterTimeInMs - beforeTimeInMs);
+
+// // Json --> JavaScript Object Notation
+
+// const user = {
+//     name : "prithwi",
+//     gender: "male"
+// }
+
+// const finalString = JSON.stringify(user);
+// console.log(finalString);
+
+
+// math( round, ceil, floor, random, max, min, pow, sqrt)
+
+
+let value = 10.3;
+mathMethods(value);
+function mathMethods(value){
+    console.log("Original Value:", value);
 }
 
-let dog = new Animal("dog", 4, "bhow bhow");
-let cat = new Animal("cat", 4, "meow meow");
-cat.speak();
-cat.legCounts();
+// round of the given number closed one. 
+let rounded = Math.round(value);
+console.log("After round() : ", rounded);
 
-//Date
-const currentDate = new Date();
-console.log(currentDate.getMonth()+1);
-console.log(currentDate.getFullYear());
-console.log(currentDate.getDate());
+// ceil is the gratest number throw
+let ceilling = Math.ceil(value);
+console.log("After ceil():", ceilling);
 
-let date = currentDate.getDate();
-let month = currentDate.getMonth()+1;
-let year = currentDate.getFullYear();
+//flor is the floring value throw 
+let flooring = Math.floor(value);
+console.log("After flor():", flooring);
 
-console.log(`Today- ${date}-${month}-${year}`);
+// random() generate a random number 
+let randomValue = Math.random(value);
+console.log("After random():", randomValue);
+// generating number between 1 to 10
+let random = Math.floor(Math.random() * 10) + 1;
+console.log(random);
 
-function calculatSum(){
-    let a = 0;
-    for(let i=0; i<100; i++){
-        a = a + i;
-    }
-    return a;
-}
+//max()throw maximum number
+let maxValue = Math.max(12, 23, 45, 65);
+console.log("After max(): ",maxValue);
 
-const beforeDate = new Date();
-const beforeTimeInMs = beforeDate.getTime();
+//min() throw minimum number 
+let minValue = Math.min(10, 20, 34, 4, 5,34);
+console.log("After min(): ",minValue);
 
-calculatSum();
+//pow(value, power number) 
+let powerOfTwo = Math.pow(10, 3);
+console.log("After pow():", powerOfTwo);
 
-const afterDate = new Date();
-const afterTimeInMs = afterDate.getTime();
-
-console.log(afterTimeInMs - beforeTimeInMs);
-
-// Json --> JavaScript Object Notation
-
-const user = {
-    name : "prithwi",
-    gender: "male"
-}
-
-const finalString = JSON.stringify(user);
-console.log(finalString);
-
+//sqrt(value) throw the value root 
+let squreRoot = Math.sqrt(9);
+console.log("After sqrt():", squreRoot);
