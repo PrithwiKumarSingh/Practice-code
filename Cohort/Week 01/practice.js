@@ -307,48 +307,88 @@
 
 // ===========>> Callback Function <<================
 
-function squre(a){
-    return a * a;
+// function squre(a){
+//     return a * a;
+// }
+// function cube(a){
+//     return a * a * a;
+// }
+
+// function sumOfSqure(a, b){
+//     let val1 = squre(a);
+//     let val2 = squre(b);
+//     return val1 + val2;
+// }
+// function sumOfCube(a, b){
+//     let val1 = cube(b);
+//     let val2 = cube(a);
+//     return val1 + val2;
+// }
+
+// console.log(sumOfCube(2,4));
+// console.log(sumOfSqure(2,4));
+
+
+// // optomize upper code 
+
+// function squre(a){
+//     return a * a;
+// }
+// function cube(a){
+//     return a * a * a;
+// }
+
+// function sumOfSomething(a, b, callback){
+//     console.log(callback);
+//     let val1 = callback(a);
+//     let val2 = callback(b);
+//     return val1 + val2;
+// }
+
+// console.log(sumOfSomething(2,3,squre));
+// console.log(sumOfSomething(2,3,cube));
+
+// // creating anonymous function 
+// console.log(sumOfSomething(2,5, function (a){
+//     return a * a * a;
+// }))
+
+// ==========>>> Async function vs sync functions <<<=================
+
+//Syncronous mean on work at a time 
+function findSum(n) {
+    let ans = 0;
+    for(let i=0; i<n; i++){
+        ans += i;
+    }
+    return ans;
 }
-function cube(a){
-    return a * a * a;
+
+function findSumTill100(){
+   console.log(findSum(10000));
+}
+console.log("hello world");
+
+
+//Asyncronous means divide work into a diffrent part of diffrent fn;
+
+function findOdd(n){
+    let odd = 0;
+    for(let i=0; i<n; i++){
+        if(i%2 == 1){
+            odd++;
+        }
+    }
+    return odd;
 }
 
-function sumOfSqure(a, b){
-    let val1 = squre(a);
-    let val2 = squre(b);
-    return val1 + val2;
+function sumDig(n){
+    let sum = 0
+    for(let i=0; i<n.length; i++){
+        sum = sum + n[i]
+    }
+    console.log(sum) ;
 }
-function sumOfCube(a, b){
-    let val1 = cube(b);
-    let val2 = cube(a);
-    return val1 + val2;
-}
-
-console.log(sumOfCube(2,4));
-console.log(sumOfSqure(2,4));
-
-
-// optomize upper code 
-
-function squre(a){
-    return a * a;
-}
-function cube(a){
-    return a * a * a;
-}
-
-function sumOfSomething(a, b, callback){
-    console.log(callback);
-    let val1 = callback(a);
-    let val2 = callback(b);
-    return val1 + val2;
-}
-
-console.log(sumOfSomething(2,3,squre));
-console.log(sumOfSomething(2,3,cube));
-
-// creating anonymous function 
-console.log(sumOfSomething(2,5, function (a){
-    return a * a * a;
-}))
+console.log("Prithwi Singh");
+setTimeout(sumDig(findOdd(50)), 5000);
+console.log("Hello World")
