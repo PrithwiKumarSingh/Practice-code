@@ -414,25 +414,65 @@
 
 // Pretty code
 
-const fs = require('fs');
+// const fs = require('fs');
 
-//My Own asychrounous function
-function kiratsReadFile(){
-return new Promise(function(resolve){
-    fs.readFile("main.js", "utf-8", function(err, data){
-        resolve(data);
-     });
+// //My Own asychrounous function
+// function kiratsReadFile(){
+// return new Promise(function(resolve){
+//     fs.readFile("main.js", "utf-8", function(err, data){
+//         resolve(data);
+//      });
+//     });
+// }
+
+// //callback function to call
+// function onDone(data){
+//     console.log(data)
+// }
+
+// kiratsReadFile().then(onDone);
+
+// let d = new Promise(function(resolve){
+//     resolve("Hello World");
+// });
+// console.log(d);
+
+// =======>>>>> Async await <<<<<===========
+
+// Normal Syntax 
+// function kiratAsyncFunction(){
+//     let p = new Promise(function(resolve){
+//         //do some async logic here
+//         resolve("hi there!");
+//     });
+//     return p;
+// }
+
+// function main(){
+//     kiratAsyncFunction().then(function(value){
+//         console.log(value);
+//     });
+// }
+
+// main();
+
+// Async/await syntax
+
+function kiratAsyncFunction(){
+    let p = new Promise(function(resolve){
+        //do some async logic here
+        setTimeout(function(){
+            resolve("hi there!");
+        }, 2000);
     });
+    return p;
 }
 
-//callback function to call
-function onDone(data){
-    console.log(data)
-}
+async function main(){
+    // no callbacks, no .then syntax 
+    const value = await kiratAsyncFunction();
+    console.log(value);
+} 
 
-kiratsReadFile().then(onDone);
+main();
 
-let d = new Promise(function(resolve){
-    resolve("Hello World");
-});
-console.log(d);
