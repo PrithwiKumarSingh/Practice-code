@@ -355,40 +355,84 @@
 
 // ==========>>> Async function vs sync functions <<<=================
 
-//Syncronous mean on work at a time 
-function findSum(n) {
-    let ans = 0;
-    for(let i=0; i<n; i++){
-        ans += i;
-    }
-    return ans;
+// //Syncronous mean on work at a time 
+// function findSum(n) {
+//     let ans = 0;
+//     for(let i=0; i<n; i++){
+//         ans += i;
+//     }
+//     return ans;
+// }
+
+// function findSumTill100(){
+//    console.log(findSum(10000));
+// }
+// console.log("hello world");
+
+
+// //Asyncronous means divide work into a diffrent part of diffrent fn;
+
+// function findOdd(n){
+//     let odd = 0;
+//     for(let i=0; i<n; i++){
+//         if(i%2 == 1){
+//             odd++;
+//         }
+//     }
+//     return odd;
+// }
+
+// function sumDig(n){
+//     let sum = 0
+//     for(let i=0; i<n.length; i++){
+//         sum = sum + n[i]
+//     }
+//     console.log(sum) ;
+// }
+// console.log("Prithwi Singh")
+// setTimeout(sumDig(findOdd(50)), 5000);
+// console.log("Hello World")
+
+// ===============>>Promise in JS<<===========
+
+//         ugly code 
+// const fs = require('fs');
+
+// //My Own asychrounous function
+// function kiratsReadFile(cb){
+//     fs.readFile("a.txt", "utf-8", function(err, data){
+//         cb(data);
+//     });
+// }
+
+// //callback function to call
+// function onDone(data){
+//     console.log(data)
+// }
+
+// kiratsReadFile(onDone);
+
+// Pretty code
+
+const fs = require('fs');
+
+//My Own asychrounous function
+function kiratsReadFile(){
+return new Promise(function(resolve){
+    fs.readFile("main.js", "utf-8", function(err, data){
+        resolve(data);
+     });
+    });
 }
 
-function findSumTill100(){
-   console.log(findSum(10000));
-}
-console.log("hello world");
-
-
-//Asyncronous means divide work into a diffrent part of diffrent fn;
-
-function findOdd(n){
-    let odd = 0;
-    for(let i=0; i<n; i++){
-        if(i%2 == 1){
-            odd++;
-        }
-    }
-    return odd;
+//callback function to call
+function onDone(data){
+    console.log(data)
 }
 
-function sumDig(n){
-    let sum = 0
-    for(let i=0; i<n.length; i++){
-        sum = sum + n[i]
-    }
-    console.log(sum) ;
-}
-console.log("Prithwi Singh");
-setTimeout(sumDig(findOdd(50)), 5000);
-console.log("Hello World")
+kiratsReadFile().then(onDone);
+
+let d = new Promise(function(resolve){
+    resolve("Hello World");
+});
+console.log(d);
