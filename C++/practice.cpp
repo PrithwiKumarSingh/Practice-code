@@ -1,5 +1,5 @@
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 // int main(){
 //     int n;
 //     cout<<"Please enter numbers : ";
@@ -62,21 +62,33 @@
 // }
 
 
-// sum of n 
-#include <iostream>
-using namespace std; 
-int main(){
-    int n;
-    cin>>n;
-    int arr[n] = {};
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
-    }
-    int sum = 0;
-    for(int i=0; i<n; i++){
-        sum += arr[i];
-    }
-    cout << sum << endl;
-    return 0;
+// // sum of n 
+// #include <iostream>
+// using namespace std; 
+// int main(){
+//     int n;
+//     cin>>n;
+//     int arr[n] = {};
+//     for(int i=0; i<n; i++){
+//         cin>>arr[i];
+//     }
+//     int sum = 0;
+//     for(int i=0; i<n; i++){
+//         sum += arr[i];
+//     }
+//     cout << sum << endl;
+//     return 0;
 
+// }
+
+// Calculate the product of all the elements in the given array.
+
+int main(){
+    int arr[] = {4, 6, 3, 6, 9};
+    int prod = 1; 
+    int n = sizeof(arr)/sizeof(arr[0]);
+    for(int i=0; i<n; i++){
+        prod *= arr[i];
+    }
+    cout<<prod<<endl;
 }
