@@ -49,5 +49,14 @@ int main(){
         }
     }
     cout<<min<<endl;
+
+//maximum value of arr 
+    int max = INT_MIN;
+    for(int i=0; i<5; i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+    }
+    cout<<max<<endl; 
     return 0;
 }
