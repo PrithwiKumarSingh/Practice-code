@@ -81,14 +81,33 @@ using namespace std;
 
 // }
 
-// Calculate the product of all the elements in the given array.
+// // Calculate the product of all the elements in the given array.
+
+// int main(){
+//     int arr[] = {4, 6, 3, 6, 9};
+//     int prod = 1; 
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     for(int i=0; i<n; i++){
+//         prod *= arr[i];
+//     }
+//     cout<<prod<<endl;
+// }
+
+//Linear Search 
+// Q1. Find the element x in the array. Take array and x as input.
 
 int main(){
-    int arr[] = {4, 6, 3, 6, 9};
-    int prod = 1; 
-    int n = sizeof(arr)/sizeof(arr[0]);
-    for(int i=0; i<n; i++){
-        prod *= arr[i];
+    int arr[5] = {4, 6, 3, 0, 9};
+    int target;
+    cout<<"Enter Target : ";
+    cin>>target; 
+    bool flag = false;
+    for(int i=0; i<5; i++){
+        if(arr[i] == target){
+            flag = true;
+            break; 
+        }
     }
-    cout<<prod<<endl;
+    if(flag == true) cout<<target<<" is present"<<endl;
+    else cout<<target<<" is not present"<<endl;
 }
