@@ -94,20 +94,22 @@ using namespace std;
 // }
 
 //Linear Search 
-// Q1. Find the element x in the array. Take array and x as input.
+// // Q1. Find the element x in the array. Take array and x as input.
 
-int main(){
-    int arr[5] = {4, 6, 3, 0, 9};
-    int target;
-    cout<<"Enter Target : ";
-    cin>>target; 
-    bool flag = false;
-    for(int i=0; i<5; i++){
-        if(arr[i] == target){
-            flag = true;
-            break; 
-        }
-    }
-    if(flag == true) cout<<target<<" is present"<<endl;
-    else cout<<target<<" is not present"<<endl;
-}
+// int main(){
+//     int arr[5] = {4, 6, 3, 0, 9};
+//     int target;
+//     cout<<"Enter Target : ";
+//     cin>>target; 
+//     bool flag = false;
+//     for(int i=0; i<5; i++){
+//         if(arr[i] == target){
+//             flag = true;
+//             break; 
+//         }
+//     }
+//     if(flag == true) cout<<target<<" is present"<<endl;
+//     else cout<<target<<" is not present"<<endl;
+// }
+
+// Q. find the second largest element in the given array.
