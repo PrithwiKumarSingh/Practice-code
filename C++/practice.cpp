@@ -93,7 +93,7 @@ using namespace std;
 //     cout<<prod<<endl;
 // }
 
-//Linear Search 
+// Linear Search 
 // // Q1. Find the element x in the array. Take array and x as input.
 
 // int main(){
