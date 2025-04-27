@@ -75,17 +75,25 @@ const bigNumber = 463453456346354634n;
 
 
 
-// String 
+// // String 
 
 
-let price = 56;
-console.log("Price of Onion is : ", price , "Fixed Rate");  //Old Fashion String 
+// let price = 56;
+// console.log("Price of Onion is : ", price , "Fixed Rate");  //Old Fashion String 
 
-console.log(`Price of Onion is : ${price} Fixed Rate`); // Modern String 
+// console.log(`Price of Onion is : ${price} Fixed Rate`); // Modern String 
 
-// String Concatination 
+// // String Concatination 
 
-let s1 = "Hello ";
-let s2 = "Prithwi Singh";
-let s3 = s1+s2;
-console.log(s3.length);
+// let s1 = "Hello ";
+// let s2 = "Prithwi Singh";
+// let s3 = s1+s2;
+// console.log(s3.length);
+
+
+let Person_Name = "Prithwi";
+
+console.log(Person_Name);
+console.log(Person_Name.toUpperCase());
+console.log(Person_Name.toLowerCase());
+
