@@ -30,19 +30,45 @@ const bigNumber = 463453456346354634n;
 
 //Array, Objects, Functions
 
-const superHeroes = ["Spiderman", "Saktiman", "IronMan"];
-console.log(superHeroes[0]);
+// const superHeroes = ["Spiderman", "Saktiman", "IronMan"];
+// console.log(superHeroes[0]);
 
-const myObj = {
-    name : "Prithwi",
-    city : "Motihari",
-    pincode : 845401
+// const myObj = {
+//     name : "Prithwi",
+//     city : "Motihari",
+//     pincode : 845401
+// }
+
+// console.log(myObj["name"]);
+
+// const myFunction = function(a,b) {
+//     console.log(a+b);
+// }
+
+// myFunction(3,5)
+
+//premitive datatype
+const num = 10;
+// num = 20;
+console.log(num);
+
+
+//Non-Primitive Datatype 
+const obj = {
+    id: 104,
+    city: "Motihari", 
+    State: "Bihar"
 }
 
-console.log(myObj["name"]);
+obj.city = "Pune";
+obj.State = "Maharastra";
+console.log(obj);
 
-const myFunction = function(a,b) {
-    console.log(a+b);
+let obj1 = {
+    id: 104,
+    city: "Motihari",
+    State: "Bihar"
 }
 
-myFunction(3,5)
+obj = obj1;
+console.log(obj);
