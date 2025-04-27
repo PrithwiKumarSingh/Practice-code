@@ -47,28 +47,45 @@ const bigNumber = 463453456346354634n;
 
 // myFunction(3,5)
 
-//premitive datatype
-const num = 10;
-// num = 20;
-console.log(num);
+// //premitive datatype
+// const num = 10;
+// // num = 20;
+// console.log(num);
 
 
-//Non-Primitive Datatype 
-const obj = {
-    id: 104,
-    city: "Motihari", 
-    State: "Bihar"
-}
+// //Non-Primitive Datatype 
+// const obj = {
+//     id: 104,
+//     city: "Motihari", 
+//     State: "Bihar"
+// }
 
-obj.city = "Pune";
-obj.State = "Maharastra";
-console.log(obj);
+// obj.city = "Pune";
+// obj.State = "Maharastra";
+// console.log(obj);
 
-let obj1 = {
-    id: 104,
-    city: "Motihari",
-    State: "Bihar"
-}
+// let obj1 = {
+//     id: 104,
+//     city: "Motihari",
+//     State: "Bihar"
+// }
 
-obj = obj1;
-console.log(obj);
+// obj = obj1;
+// console.log(obj);
+
+
+
+// String 
+
+
+let price = 56;
+console.log("Price of Onion is : ", price , "Fixed Rate");  //Old Fashion String 
+
+console.log(`Price of Onion is : ${price} Fixed Rate`); // Modern String 
+
+// String Concatination 
+
+let s1 = "Hello ";
+let s2 = "Prithwi Singh";
+let s3 = s1+s2;
+console.log(s3.length);
