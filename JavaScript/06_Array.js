@@ -31,24 +31,40 @@
 // console.log(arr.length);
 
 
-const arr = [3, 4, 65, 23, 45, "Prithwi", true];
+// const arr = [3, 4, 65, 23, 45, "Prithwi", true];
 
-// push() add element in last 
+// // push() add element in last 
 
-arr.push(50);
-console.log(arr);
+// arr.push(50);
+// console.log(arr);
 
-// pop() delete element in last 
+// // pop() delete element in last 
 
-arr.pop();
-console.log(arr);
+// arr.pop();
+// console.log(arr);
 
-//unshift add element in start
+// //unshift add element in start
 
-arr.unshift("Rohit");
-console.log(arr);
+// arr.unshift("Rohit");
+// console.log(arr);
 
-// shift delete element in start
+// // shift delete element in start
 
-arr.shift();
-console.log(arr);
+// arr.shift();
+// console.log(arr);
+
+// //delete 
+
+// delete arr[6];
+// arr.push(false);
+// console.log(arr);
+// console.log(arr[4]);
+// console.log(arr.length);
+
+
+const arr = [3, 4, 65, 23, 45, "Prithwi", true, 4];
+
+console.log(arr.indexOf(4));
+console.log(arr.lastIndexOf(4));
+console.log(arr.includes(8)); // false
+console.log(arr.includes(23)); // true
