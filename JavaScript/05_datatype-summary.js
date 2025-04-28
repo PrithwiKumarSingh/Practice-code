@@ -91,9 +91,19 @@ const bigNumber = 463453456346354634n;
 // console.log(s3.length);
 
 
-let Person_Name = "Prithwi";
+// let Person_Name = "Prithwi";
 
-console.log(Person_Name);
-console.log(Person_Name.toUpperCase());
-console.log(Person_Name.toLowerCase());
+// console.log(Person_Name);
+// console.log(Person_Name.toUpperCase());
+// console.log(Person_Name.toLowerCase());
 
+
+// let hero = "Hello Prithwi Singh";
+// console.log(hero.indexOf("Prithwi")); //6
+// console.log(hero.indexOf("prithwi"));  //-1
+// console.log(hero.lastIndexOf("Prithwi"));  //6
+// console.log(hero.includes("prithwi")); //false
+
+
+// let str = new String ("Hello Prithwi Singh");
+// console.log(str[0]);
