@@ -64,7 +64,7 @@
 
 const arr = [3, 4, 65, 23, 45, "Prithwi", true, 4];
 
-// // indexOf(): Returns the index of the .....
+// // indexOf(): Returns the index of the first occurrence.
 
 // console.log(arr.indexOf(4));
 // console.log(arr.lastIndexOf(4));
@@ -75,22 +75,41 @@ const arr = [3, 4, 65, 23, 45, "Prithwi", true, 4];
 // console.log(arr.includes(23)); // true
 
 
-console.log(arr);
+// console.log(arr);
 
-//slice(): Extracts a portion of the array without modifying it. 
+// //slice(): Extracts a portion of the array without modifying it. 
 
-console.log(arr.slice(2,6));
+// console.log(arr.slice(2,6));
 
-// splice(): Method in JavaScript is a powerful array method used for modifying an array by adding, removing, or replacing elements.
-// splice(starting_index, total_element_delete, add value);
-console.log(arr);
-// console.log(arr.splice(2,5));
-console.log(arr.splice(2,5,"Money", 45));
-console.log(arr);
+// // splice(): Method in JavaScript is a powerful array method used for modifying an array by adding, removing, or replacing elements.
+// // splice(starting_index, total_element_delete, add value);
+// console.log(arr);
+// // console.log(arr.splice(2,5));
+// console.log(arr.splice(2,5,"Money", 45));
+// console.log(arr);
 
-// toString() converts an array to a string of (comma separated) array values. 
+// // toString() converts an array to a string of (comma separated) array values. 
 
 
-console.log(arr);
-console.log(arr.toString());
-console.log(arr.join("_"))
+// console.log(arr);
+// console.log(arr.toString());
+
+//The join() method also joins all array elements into a string.
+// console.log(arr.join("_"))
+
+
+// Concat() method creates a new array by merging (concatenating) existing arrays:
+
+let arr1 = [3, 45, 56, 33];
+let arr2 = [5, 6, 34, 65];
+let arr3 = [9, 5, 6, 45];
+
+let arr4 = arr1.concat(arr2,arr3);
+console.log(arr4);
+
+arr1.push(arr2);
+console.log(arr1);
+console.log(arr1[4][0]);
+
+// The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+
