@@ -21,9 +21,29 @@
 // hello(() => console.log("I am callback Function"));
 
 
-function fetchData(){
-    console.log("I am fetching data");
+// function fetchData(){
+//     console.log("I am fetching data");
+// }
+
+// // fetchData fn call every 5s using setInterval Fn.
+// setInterval(fetchData, 5000);   
+
+//forEach
+
+let arr = [32,5,4,7,2];
+//single argument : number
+//second argument : index
+//third argumnet : array ko bhi pass
+
+arr.forEach((num,index,a) => {
+    a[index] = num*2;
+})
+
+console.log(arr);
+
+//second method 
+function greet(num){
+    console.log(num);
 }
 
-// fetchData fn call every 5s using setInterval Fn.
-setInterval(fetchData, 5000);   
+arr.forEach(greet);
