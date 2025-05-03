@@ -60,17 +60,29 @@
 
 // console.log(result);
 
-const student = [
-    {name: "Prithwi", age : 21, marks:48},
-    {name: "Rohit", age : 24, marks:40},
-    {name: "mohit", age : 27, marks:70},
-    {name: "rohan", age : 31, marks:80},
-    {name: "mohan", age : 41, marks:90},
-]
+// const student = [
+//     {name: "Prithwi", age : 21, marks:48},
+//     {name: "Rohit", age : 24, marks:40},
+//     {name: "mohit", age : 27, marks:70},
+//     {name: "rohan", age : 31, marks:80},
+//     {name: "mohan", age : 41, marks:90},
+// ]
 
-// console.log(student[0].marks);
+// // console.log(student[0].marks);
 
-// const res = student.filter((value) => value.marks > 50);
-const res = student.filter(({marks}) => marks > 50);
+// // const res = student.filter((value) => value.marks > 50);
+// const res = student.filter(({marks}) => marks > 50);
 
+// console.log(res);
+
+// map : result store and modify every element.
+// forEach : result can't be stored in a variables.
+
+const arr = [2, 4, 6,3];
+
+const result = arr.map((num) => num*num);
+console.log(result);
+arr.forEach((num) =>  console.log(num + num));
+
+const res = arr.filter((num) => num%2 == 0).map((num) => num*num);
 console.log(res);
