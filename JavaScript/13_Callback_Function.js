@@ -30,20 +30,47 @@
 
 //forEach
 
-let arr = [32,5,4,7,2];
-//single argument : number
-//second argument : index
-//third argumnet : array ko bhi pass
+// let arr = [32,5,4,7,2];
+// //single argument : number
+// //second argument : index
+// //third argumnet : array ko bhi pass
 
-arr.forEach((num,index,a) => {
-    a[index] = num*2;
-})
+// arr.forEach((num,index,a) => {
+//     a[index] = num*2;
+// })
 
-console.log(arr);
+// console.log(arr);
 
-//second method 
-function greet(num){
-    console.log(num);
-}
+// //second method 
+// function greet(num){
+//     console.log(num);
+// }
 
-arr.forEach(greet);
+// arr.forEach(greet);
+
+
+
+//  filter
+
+// let arr = [10, 24, 3, 49, 50, 60];
+
+// const result = arr.filter((num) => {
+//     return num%2 == 0;
+// })
+
+// console.log(result);
+
+const student = [
+    {name: "Prithwi", age : 21, marks:48},
+    {name: "Rohit", age : 24, marks:40},
+    {name: "mohit", age : 27, marks:70},
+    {name: "rohan", age : 31, marks:80},
+    {name: "mohan", age : 41, marks:90},
+]
+
+// console.log(student[0].marks);
+
+// const res = student.filter((value) => value.marks > 50);
+const res = student.filter(({marks}) => marks > 50);
+
+console.log(res);
