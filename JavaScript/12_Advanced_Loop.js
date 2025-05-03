@@ -20,17 +20,34 @@
 // console.log(obj2);
 
 
-const obj1 = {
-    name : "rohit",
-    age : 23,
-    account_number : 30001
-};
+// const obj1 = {
+//     name : "rohit",
+//     age : 23,
+//     account_number : 30001
+// };
 
-Object.defineProperty(obj1, 'account_number', {
-    writable : false
+// Object.defineProperty(obj1, 'account_number', {
+//     writable : false
+// })
+
+// obj1.account_number = 20001;
+// obj1.name = "Prithwi";
+// console.log(obj1.account_number);
+// console.log(obj1.name);
+
+
+
+let user = {
+    name : "rohit",
+    age : 30
+}
+
+Object.defineProperty(user, 'name', {
+    writable : false,
 })
 
-obj1.account_number = 20001;
-obj1.name = "Prithwi";
-console.log(obj1.account_number);
-console.log(obj1.name);
+
+user.name = "Prithwi";
+console.log(user);
+
+console.log(Object.getOwnPropertyDescriptor(user, "name"))
