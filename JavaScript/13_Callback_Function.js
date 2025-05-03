@@ -78,11 +78,40 @@
 // map : result store and modify every element.
 // forEach : result can't be stored in a variables.
 
-const arr = [2, 4, 6,3];
+// const arr = [2, 4, 6,3];
 
-const result = arr.map((num) => num*num);
+// const result = arr.map((num) => num*num);
+// console.log(result);
+// arr.forEach((num) =>  console.log(num + num));
+
+// const res = arr.filter((num) => num%2 == 0).map((num) => num*num);
+// console.log(res);
+
+
+//   reduce 
+// const arr = [10, 20, 30, 40, 50];
+
+// //const result  = arr.reduce(callback function, initialization)
+// // const result = arr.reduce((acc, curr)=>{
+// //     // console.log(acc,curr);
+// //     acc = acc + curr;
+// //     return acc;
+// // }, 0);
+
+// const result = arr.reduce((acc,curr) => acc + curr, 0);
+
+// console.log(result);
+
+let arr = ["orange", "apple", "banana", "orange","apple", "banana", "orange", "grapess"];
+
+//final result ek object ke form 
+
+const result = arr.reduce((acc,curr) => {
+    if(acc.hasOwnProperty(curr))
+        acc[curr]++;
+    else
+    acc[curr] = 1;
+
+    return acc;
+},{});
 console.log(result);
-arr.forEach((num) =>  console.log(num + num));
-
-const res = arr.filter((num) => num%2 == 0).map((num) => num*num);
-console.log(res);
