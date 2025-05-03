@@ -146,8 +146,8 @@
 //  arr = [...arr];
 // console.log(arr);
 
-let set1 = new Set([10,20,35,40,50]);
-let set2 = new Set([10,20,30,40,50,60,70]);
+// let set1 = new Set([10,20,35,40,50]);
+// let set2 = new Set([10,20,30,40,50,60,70]);
 
 // let set3 = new Set([...set1, ...set2]);
 // console.log(set3);
@@ -165,3 +165,36 @@ let set2 = new Set([10,20,30,40,50,60,70]);
 
 // set1.forEach((value) => console.log(value));
 
+
+
+
+
+
+// // key value pair: key should be unique
+// const map1 = new Map();
+// map1.set(3,59);
+// map1.set('rohit', 33);
+// map1.set(30, "sohan");
+// map1.set(35, 'rohit')
+// map1.delete(35);
+
+// console.log(map1.has("rohit"));
+
+// console.log(map1);
+
+
+const map1 = new Map([[23, "rohit"], ["Mohan", "rohan"],[30,38], [68,19]]);
+
+// for of loop
+
+// for(let value of map1){
+//     // console.log(value);
+
+//     for(let res of value){
+//         console.log(res);
+//     }
+// }
+
+for(let [key,value] of map1){
+    console.log(key, value);
+}
