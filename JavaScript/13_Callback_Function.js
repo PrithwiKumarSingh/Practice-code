@@ -102,16 +102,66 @@
 
 // console.log(result);
 
-let arr = ["orange", "apple", "banana", "orange","apple", "banana", "orange", "grapess"];
+// let arr = ["orange", "apple", "banana", "orange","apple", "banana", "orange", "grapess"];
 
-//final result ek object ke form 
+// //final result ek object ke form 
 
-const result = arr.reduce((acc,curr) => {
-    if(acc.hasOwnProperty(curr))
-        acc[curr]++;
-    else
-    acc[curr] = 1;
+// const result = arr.reduce((acc,curr) => {
+//     if(acc.hasOwnProperty(curr))
+//         acc[curr]++;
+//     else
+//     acc[curr] = 1;
 
-    return acc;
-},{});
-console.log(result);
+//     return acc;
+// },{});
+// console.log(result);
+
+
+// set
+
+// const set1 = new Set ([20,54,64,64,63,32]);
+// console.log(typeof set1);
+
+// const set1 = new Set();
+// set1.add(3);
+// set1.add(4);
+// set1.add("rohit");
+// set1.add("Mohit");
+
+// set1.delete("Mohit");
+// console.log(set1);
+
+
+// const user_id = new Set(["rohit_negi9", "Mohi_91","ravi.93","chavi_90", "sumit.39"]);
+// let new_user = "pritwhi.films";
+ 
+// if(user_id.has(new_user)){
+//     console.log("Already ! exits this user name.");
+// } else{
+//     console.log("No exitst ! You can make them");
+// }
+
+// let arr = [10,20,30,10,30,40,50];
+// const str2 = new Set(arr);
+//  arr = [...arr];
+// console.log(arr);
+
+let set1 = new Set([10,20,35,40,50]);
+let set2 = new Set([10,20,30,40,50,60,70]);
+
+// let set3 = new Set([...set1, ...set2]);
+// console.log(set3);
+
+// intersection
+//filter: array
+// const result = [...set1].filter((num) => set2.has(num));
+// console.log(result);
+
+//Iterate over set
+//for of: iterator
+// for(let value of set1){
+//     console.log(value);
+// }
+
+// set1.forEach((value) => console.log(value));
+
