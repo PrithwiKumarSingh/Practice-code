@@ -28,13 +28,24 @@
 
 /* ******************* Attribute Node ********************* */
 
-const element = document.createAttribute("id");
-element.value = "first";
+// const element = document.createAttribute("id");
+// element.value = "first";
 
-// Accessing First list 
-// const curr_list = document.querySelector("li");
-// curr_list.setAttributeNode(element);
+// // Accessing First list 
+// // const curr_list = document.querySelector("li");
+// // curr_list.setAttributeNode(element);
 
-// Accessing Second list 
-const parent = document.querySelector("#root");
-parent.children[1].setAttributeNode(element);
+// // Accessing Second list 
+// const parent = document.querySelector("#root");
+// parent.children[1].setAttributeNode(element);
+
+
+/******************** Access attribute of a element ********************* */
+
+const element = document.getElementById("root");
+
+console.log(element.getAttribute("class"));
+
+element.setAttribute("custom", "20");
+element.setAttribute("class", "rohit");
+
