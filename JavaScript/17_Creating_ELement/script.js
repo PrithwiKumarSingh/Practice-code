@@ -69,16 +69,20 @@
 
 
 
-const parent = document.getElementById("root");
-// parent.innerHTML += "<li>TS</li>";
+// const parent = document.getElementById("root");
+// // parent.innerHTML += "<li>TS</li>";
 
-const element = document.createElement("div");
-element.innerHTML = "Hello Coder Army";
+// const element = document.createElement("div");
+// element.innerHTML = "Hello Coder Army";
 
-parent.insertAdjacentElement("beforebegin", element);
-parent.insertAdjacentElement("afterbegin", element);
-parent.insertAdjacentElement("afterend", element);
-parent.insertAdjacentElement("beforeend", element);
+// parent.insertAdjacentElement("beforebegin", element);
+// parent.insertAdjacentElement("afterbegin", element);
+// parent.insertAdjacentElement("afterend", element);
+// parent.insertAdjacentElement("beforeend", element);
 
 
+// Delete node or element 
+
+const element = document.querySelector("li");
+element.remove();
 
