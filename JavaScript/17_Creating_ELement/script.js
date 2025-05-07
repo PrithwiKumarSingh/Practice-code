@@ -1,0 +1,20 @@
+
+/* *******************CreateElement********************* */
+
+function attach(content){
+let element = document.createElement("li");
+element.innerHTML = content;
+
+let parent = document.querySelector("#root")
+// parent.appendChild(element);
+// parent.append(element,"Hello ", "Har Har Mahadev ");
+
+let element2 = document.createElement("li");
+element2.innerHTML = content+" V2.0";
+parent.append(element,element2);
+
+
+}
+
+attach("TS");
+attach("React");
