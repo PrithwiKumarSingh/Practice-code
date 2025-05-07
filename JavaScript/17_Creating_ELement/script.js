@@ -42,10 +42,21 @@
 
 /******************** Access attribute of a element ********************* */
 
-const element = document.getElementById("root");
+// const element = document.getElementById("root");
 
-console.log(element.getAttribute("class"));
+// console.log(element.getAttribute("class"));
 
-element.setAttribute("custom", "20");
-element.setAttribute("class", "rohit");
+// element.setAttribute("custom", "20");
+// element.setAttribute("class", "rohit");
 
+
+/* ******************* Add nodes to the DOM ********************* */
+const parent = document.getElementById("root");
+const element = document.createElement("li");
+element.innerHTML = "TS";
+
+//first in list 
+parent.prepend(element);
+
+//last in list 
+parent.append(element);
