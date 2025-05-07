@@ -55,8 +55,13 @@ const parent = document.getElementById("root");
 const element = document.createElement("li");
 element.innerHTML = "TS";
 
-//first in list 
-parent.prepend(element);
+// //first in list 
+// parent.prepend(element);
 
-//last in list 
-parent.append(element);
+// //last in list 
+// parent.append(element);
+
+const child2 = parent.children[1];
+parent.insertBefore(element, child2);
+
+parent.replaceChild(element,child2);

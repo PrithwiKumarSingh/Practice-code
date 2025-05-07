@@ -22,3 +22,10 @@
 6 : Using innerHTML
     Directly sets the HTML content of an element.
 7 : Using insertAdjacentHTML() or insertAdjacentElement();
+
+beforebegin : Before the element itself.
+afterbegin : Inside the element, before its first child. 
+beforeend : Inside the element, after its last child.
+afterend : After the element itself.
+
+8 : removeChild(node)
