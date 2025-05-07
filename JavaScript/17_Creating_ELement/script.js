@@ -22,6 +22,19 @@
 
 /* *******************  TextNode  ********************* */
 
-let element = document.createTextNode("Hello Coder Army");
-const parent = document.querySelector('#root');
-parent.append(element);
+// let element = document.createTextNode("Hello Coder Army");
+// const parent = document.querySelector('#root');
+// parent.append(element);
+
+/* ******************* Attribute Node ********************* */
+
+const element = document.createAttribute("id");
+element.value = "first";
+
+// Accessing First list 
+// const curr_list = document.querySelector("li");
+// curr_list.setAttributeNode(element);
+
+// Accessing Second list 
+const parent = document.querySelector("#root");
+parent.children[1].setAttributeNode(element);
