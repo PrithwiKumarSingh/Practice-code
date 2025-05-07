@@ -51,17 +51,34 @@
 
 
 /* ******************* Add nodes to the DOM ********************* */
+// const parent = document.getElementById("root");
+// const element = document.createElement("li");
+// element.innerHTML = "TS";
+
+// // //first in list 
+// // parent.prepend(element);
+
+// // //last in list 
+// // parent.append(element);
+
+// const child2 = parent.children[1];
+// parent.insertBefore(element, child2);
+
+// parent.replaceChild(element,child2);
+
+
+
+
 const parent = document.getElementById("root");
-const element = document.createElement("li");
-element.innerHTML = "TS";
+// parent.innerHTML += "<li>TS</li>";
 
-// //first in list 
-// parent.prepend(element);
+const element = document.createElement("div");
+element.innerHTML = "Hello Coder Army";
 
-// //last in list 
-// parent.append(element);
+parent.insertAdjacentElement("beforebegin", element);
+parent.insertAdjacentElement("afterbegin", element);
+parent.insertAdjacentElement("afterend", element);
+parent.insertAdjacentElement("beforeend", element);
 
-const child2 = parent.children[1];
-parent.insertBefore(element, child2);
 
-parent.replaceChild(element,child2);
+

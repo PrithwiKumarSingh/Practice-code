@@ -28,4 +28,5 @@ afterbegin : Inside the element, before its first child.
 beforeend : Inside the element, after its last child.
 afterend : After the element itself.
 
-8 : removeChild(node)
+8 : removeChild(node) Homework
+9 : The .remove() method in JavaScript is used to remove an element from the DOM (Documnet Object Model).
