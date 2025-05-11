@@ -21,10 +21,24 @@
 //     body.style.backgroundColor = "purple";
 // }) 
 
-const button = document.querySelectorAll("button");
-const body = document.querySelector("body");
-button.forEach((button)=>{
-    button.addEventListener("click", ()=>{
-        body.style.backgroundColor = button.cont;
-    })
+
+// ************** Optimization on using foreach() **********
+
+// const button = document.querySelectorAll("button");
+// const body = document.querySelector("body");
+// button.forEach((button)=>{
+//     button.addEventListener("click", ()=>{
+//         body.style.backgroundColor = button.cont;
+//     })
+// })
+
+
+
+
+// **********  event bubbling (false) & event capturing (true) 
+
+
+const root = document.querySelector("#root");
+root.addEventListener("click", (event)=>{
+   document.body.style.backgroundColor = event.target.id;
 })
