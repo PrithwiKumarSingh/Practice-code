@@ -15,5 +15,3 @@ button.addEventListener("click", () =>{
     res.textContent ="Result : "+result;
 })
 
-
-// Make BMI calculator
