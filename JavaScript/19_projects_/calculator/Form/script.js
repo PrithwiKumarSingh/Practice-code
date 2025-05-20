@@ -17,8 +17,15 @@ const form = document.querySelector('form');
 //     console.log(event.target.value);
 // })
 
-focusout
-form.addEventListener('focusout', (event) =>{
-    console.log(event.target.value);
+// focusout
+// form.addEventListener('focusout', (event) =>{
+//     console.log(event.target.value);
+// })
+
+
+//click 
+form.addEventListener('click', (event) =>{
+    // console.log(event.target.value);
+    console.log("single click");
 })
 
