@@ -35,14 +35,30 @@ const form = document.querySelector('form');
 //     console.log("double click");
 // })
 
-// submit
-form.addEventListener('submit', (event) =>{
-    // console.log(event.target.value);
-    console.log("Form Submitted");
-})
+// // submit
+// form.addEventListener('submit', (event) =>{
+//     // console.log(event.target.value);
+//     console.log("Form Submitted");
+// })
 
-//Reset
-form.addEventListener('reset', (event) =>{
-    // console.log(event.target.value);
-    console.log("Form Reset");
+// //Reset
+// form.addEventListener('reset', (event) =>{
+//     // console.log(event.target.value);
+//     console.log("Form Reset");
+// })
+
+
+form.addEventListener("submit", (event) => {
+
+    //usnig preventDefault() : to stop reload pages.
+    event.preventDefault();
+
+    const first = document.getElementById('first');
+    console.log(first.value);
+
+    const second = document.getElementById('second');
+    console.log(second.value);
+
+    const third = document.getElementById('third');
+    console.log(third.value);
 })
