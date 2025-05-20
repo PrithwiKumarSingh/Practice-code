@@ -23,9 +23,15 @@ const form = document.querySelector('form');
 // })
 
 
-//click 
-form.addEventListener('click', (event) =>{
+// click 
+// form.addEventListener('click', (event) =>{
+//     // console.log(event.target.value);
+//     console.log("single click");
+// })
+
+dbclick 
+form.addEventListener('dbclick', (event) =>{
     // console.log(event.target.value);
-    console.log("single click");
+    console.log("double click");
 })
 
