@@ -7,8 +7,13 @@ const form = document.querySelector('form');
 //     console.log(event.target.value);
 // })
 
-input
-form.addEventListener('input', (event) =>{
+//input
+// form.addEventListener('input', (event) =>{
+//     console.log(event.target.value);
+// })
+
+focusin
+form.addEventListener('focusin', (event) =>{
     console.log(event.target.value);
 })
 
