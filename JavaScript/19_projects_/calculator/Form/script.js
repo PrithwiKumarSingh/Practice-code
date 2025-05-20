@@ -12,8 +12,13 @@ const form = document.querySelector('form');
 //     console.log(event.target.value);
 // })
 
-focusin
-form.addEventListener('focusin', (event) =>{
+// focusin
+// form.addEventListener('focusin', (event) =>{
+//     console.log(event.target.value);
+// })
+
+focusout
+form.addEventListener('focusout', (event) =>{
     console.log(event.target.value);
 })
 
