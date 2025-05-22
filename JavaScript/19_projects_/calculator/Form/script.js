@@ -61,4 +61,8 @@ form.addEventListener("submit", (event) => {
 
     const third = document.getElementById('third');
     console.log(third.value);
+
+    const result = document.getElementById('result');
+    result.innerHTML = `${first.value} ${second.value} is a good Boy`;
+    document.body.append(result);
 })
