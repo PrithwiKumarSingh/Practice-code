@@ -1,0 +1,44 @@
+body{
+    background-image: url(https://img.freepik.com/free-vector/realistic-soccer-football-stadium-illustration_52683-60377.jpg?t=st=1748325410~exp=1748329010~hmac=f1a01d8fb8f7e01b4d6d586075df8292dea25ee746f88da600b43a40140af1f7&w=1380);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 98vh;
+}
+h1{
+    text-align: center;
+}
+.container{
+    background-color: red;
+    width: 600px;
+    padding: 10px 50px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 22px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+button {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  button:hover{
+    background-color: #0062ff;
+  }
