@@ -81,22 +81,50 @@
 
 
       // choose five random questions
+         
+
       function randomQuestions(){
-        const data = new Set();
-        //use set for unique object
+
+          // First Method to choose
+
+    //     const data = new Set();
+    //     //use set for unique object
 
 
-        while(data.size != 5){
-            const index = Math.floor(Math.random()*70);
-            data.add(questionBank[index])
-        }
+    //     while(data.size != 5){
+    //         const index = Math.floor(Math.random()*70);
+    //         data.add(questionBank[index])
+    //     }
 
-        // convert set into array 
-        return [...data];
-      }
+    //     // convert set into array 
+    //     return [...data];
+    //   
+
+
+      //Second Method to choose 
+      
+    //   questionBank.sort(() => Math.random()-0.5);
+    //   return questionBank.slice(0,5);
 
 
 
+
+      // third method to choose 
+
+    const arr = [];
+    let length = questionBank.length;
+
+    for(let i=0; i<5; i++){
+        const index = Math.floor(Math.random()*length);
+        arr.push(questionBank[index]);
+
+        //swap
+        [questionBank[index], questionBank[length-1]] = [questionBank[length-1], questionBank[index]];
+        length--;
+    }
+    return arr;
+
+}
 
       //  select the form and insert all the elements into it 
 
