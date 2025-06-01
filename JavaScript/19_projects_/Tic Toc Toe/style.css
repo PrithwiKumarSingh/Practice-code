@@ -8,28 +8,30 @@
   }
   
   body {
-    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    background: linear-gradient(90deg,rgba(255, 0, 0, 1) 14%, rgba(127, 26, 143, 1) 48%, rgba(0, 47, 255, 1) 81%);background: linear-gradient(90deg,rgba(255, 0, 0, 1) 14%, rgba(127, 26, 143, 1) 57%, rgba(0, 47, 255, 1) 81%);
     height: 100vh;
     display: flex;
     align-items: center;
+    gap: 50px;
     justify-content: center;
   }
   
   .container {
-    position: absolute;
+    /* position: absolute; */
     width: 550px;
     height: 700px;
-    background-color: #f6f5fb;
+    background-color: #ffffff3d;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
+    backdrop-filter: blur(10px);
   }
   
   h1 {
     margin-bottom: 80px;
     font-size: 32px;
-    color: #333;
+    color: #1c1b1b;
   }
   
   .board {
@@ -46,7 +48,8 @@
   .ceil {
     height: 150px;
     width: 150px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.067);
+    backdrop-filter: blur(10px);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     cursor: pointer;
@@ -57,10 +60,11 @@
     font-size: 100px;
     font-weight: bold;
     caret-color: transparent;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 70px red;
   }
   
   .ceil:hover {
-    background-color: #f0f0f0;
+    background-color: #d9d9d97c;
   }
   
   #restartgame {
@@ -83,4 +87,55 @@
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 8px;
+  }
+
+  .first-container{
+    /* background-color: red; */
+    height: 80vh;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .last-container{
+    /* background-color: blue; */
+    height: 80vh;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h2{
+    background-color: greenyellow;
+    padding: 10px 20px;
+    border-radius: 12px;
+    max-width: 50%;
+    margin-left: 7rem;
+    font-weight: 600;
+  }
+
+  #ch1{
+    position:  relative;
+    max-width: 100%;
+    margin-top: 120px;
+    object-fit: contain;
+    /* scale: 1.5; */
+    transition: all ease-in-out;
+  }
+  #ch2{
+    height: 400px;
+    margin-top: 100px;
+  }
+
+  #pl1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 40px;
+    box-shadow: #333;
+  }
+  #pl2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    box-shadow: #333;
   }
