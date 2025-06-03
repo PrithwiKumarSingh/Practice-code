@@ -1,0 +1,50 @@
+// function fetchuser(callback){
+//     console.log("Fecthing the user Detail......");
+//     setTimeout(()=>{
+//         console.log("Data fetched succesfully");
+//         const obj = {
+//             name : 'Rohit',
+//             age : 32,
+//             gender : "male"
+//         }
+
+//         // Data fetched from backend 
+//         callback(obj)
+
+//     },2000)
+// }
+
+function greet(obj){
+    console.log(`Hello ${obj.name} `);
+}
+
+function meet(obj){
+    console.log(`Hello ${obj.name}, I will meet you in Delhi`);
+}
+
+function Edit(Name){
+    console.log(`Edit ${Name}, of the user`);
+}
+
+
+// fetchuser(greet);
+// fetchuser(meet);
+// fetchuser(Edit);
+
+function fetchdata(callback){
+    console.log("Fetched info of user");
+
+        setTimeout(()=>{
+            console.log("User detail fetched succesfully");
+            const obj = {
+                name : "Rohit",
+                age : 28,
+                city : "Delhi",
+            }
+
+            callback(obj);
+        },2000);
+
+}
+
+fetchdata(meet);

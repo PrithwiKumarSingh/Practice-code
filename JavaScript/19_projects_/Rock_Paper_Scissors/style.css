@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+#top-container{
+    height: 40vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 40px;
+
+}
+
+#player{
+    /* background-color: blue; */
+    width: 30%;
+    height: 100%;
+    margin-left: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#computer{
+    /* background-color: yellow; */
+    width: 30%;
+    height: 100%;
+    margin-right: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 300px;
+    font-size: 2rem;
+    font-weight: 700; 
+}
+h4{
+    position: ⏱️ Takes 2 minutes to apply absolute;
+    margin-left: 20px;
+    margin-top: 300px;
+    font-size: 2rem;
+    font-weight: 700; 
+}
+
+#middle-container{
+    /* background-color: aqua; */
+    height: 40vh;
+    padding: 40px 400px;
+    display: flex;
+    justify-content: space-between;
+}
+#Rock{
+    /* background-color: blueviolet; */
+    height: 100%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.5;
+    margin-left: 250px;
+}
+
+#Paper{
+    /* background-color: blanchedalmond; */
+    height: 100%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.5;
+
+
+}
+
+#Scissor{
+    /* background-color: brown; */
+    height: 100%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.5;
+    margin-right: 500px;
+}
