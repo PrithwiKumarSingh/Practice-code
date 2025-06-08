@@ -14,37 +14,82 @@
 //     },2000)
 // }
 
-function greet(obj){
-    console.log(`Hello ${obj.name} `);
-}
+// function greet(obj){
+//     console.log(`Hello ${obj.name} `);
+// }
 
-function meet(obj){
-    console.log(`Hello ${obj.name}, I will meet you in Delhi`);
-}
+// function meet(obj){
+//     console.log(`Hello ${obj.name}, I will meet you in Delhi`);
+// }
 
-function Edit(Name){
-    console.log(`Edit ${Name}, of the user`);
-}
+// function Edit(Name){
+//     console.log(`Edit ${Name}, of the user`);
+// }
 
 
 // fetchuser(greet);
 // fetchuser(meet);
 // fetchuser(Edit);
 
-function fetchdata(callback){
-    console.log("Fetched info of user");
+// function fetchdata(callback){
+//     console.log("Fetched info of user");
 
-        setTimeout(()=>{
-            console.log("User detail fetched succesfully");
-            const obj = {
-                name : "Rohit",
-                age : 28,
-                city : "Delhi",
-            }
+//         setTimeout(()=>{
+//             console.log("User detail fetched succesfully");
+//             const obj = {
+//                 name : "Rohit",
+//                 age : 28,
+//                 city : "Delhi",
+//             }
 
-            callback(obj);
-        },2000);
+//             callback(obj);
+//         },2000);
 
-}
+// }
 
-fetchdata(meet);
+// fetchdata(meet);
+
+
+function placeOrder(callback){
+    console.log("Talking With Domino's");
+
+    setTimeout(()=>{
+        console.log("Order placed Succesfully");
+        callback();
+    }, 2000);
+};
+
+function preparingOrder(callback){
+    console.log("Pizza preparation started.....");
+
+    setTimeout(()=>{
+        console.log("Pizza preparation Done");
+        callback();
+    }, 5000)
+};
+
+function pickupOrder(callback){
+    console.log("Reaching restaurant for picking order");
+
+    setTimeout(()=>{
+        console.log("Order picked up by Delivery Boy");
+        callback();
+    },3000)
+};
+
+function deliverOrder(){
+    console.log("Delivery boy on the way ......");
+
+    setTimeout(()=>{
+        console.log("Order Delivered succesfully");
+    },5000);
+};
+
+
+placeOrder(()=>{
+    preparingOrder(()=>{
+        pickupOrder(()=>{
+            deliverOrder();
+        });
+    });
+});
