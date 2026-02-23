@@ -25,19 +25,26 @@ function checkWinner(){
 
 const printer = (event) => {
     const elem = event.target;
+    
     // if board is empty;
 
     if(board_array[elem.id] === "E"){
+
         total_turn++;
+        const ch2 = document.getElementById('ch2');
+        const ch1 = document.getElementById('ch1');
     if(turn==="O")
         { 
-        ch2.style.scale = "1";
-        const ch1 = document.getElementById('ch1');
-        ch1.style.scale = "1.2";
+        ch1.style.scale = "1";
+        ch1.style.filter = "none";  
+        ch2.style.scale = "1.2";
+        ch2.style.filter = "drop-shadow(0 0 20px rgba(181, 189, 255, 0.7))";
         elem.innerHTML = "O";
-        elem.style.textShadow = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 70px red;"
+        elem.style.textShadow = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 70px red";
         board_array[elem.id] = "O"
         if(checkWinner()){
+            ch1.style.filter = "drop-shadow(0 0 20px rgba(181, 189, 255, 0.7))";
+            ch1.style.scale = "1.5";
             document.getElementById('pl1').innerHTML = " !! Winner !!";
             document.getElementById('pl1').style.color = "greenyellow";
             document.getElementById('pl2').innerHTML= "! Losser !";
@@ -50,13 +57,15 @@ const printer = (event) => {
 
     } 
     else{
-        ch1.style.scale = "1";
-        const ch2 = document.getElementById('ch2');
-        ch2.style.scale = "1.2";
+        ch2.style.scale = "1"; 
+        ch2.style.filter = "none";
+        ch1.style.filter = "drop-shadow(0 0 20px rgba(181, 189, 255, 0.7))";
+        ch1.style.scale = "1.2";
         elem.innerHTML = "X";
         elem.style.textShadow = "0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6"
         board_array[elem.id] = "X"
         if(checkWinner()){
+            ch2.style.scale = "1.5";  
             document.getElementById('pl2').innerHTML = " !! Winner !!";
             document.getElementById('pl2').style.color = "greenyellow";
             document.getElementById('pl1').innerHTML= "! Losser !";
@@ -83,18 +92,20 @@ board.addEventListener("click",printer);
 const Restart = document.getElementById("restartgame");
 Restart.addEventListener('click', ()=>{
     const cell = document.getElementsByClassName('ceil');
-
     Array.from(cell).forEach((value) => {
         value.innerHTML = "";
     })
 
     turn = "O";
     total_turn = 0;
+    ch1.style.scale = "1.3";  
     board_array = new Array(9).fill("E");
     document.getElementById('winningMassage').innerHTML = "";
     board.addEventListener('click', printer);
-    document.getElementById('ch1').style.scale = '1';
+    document.getElementById('ch1').style.scale = '1.2';
+    document.getElementById('ch1').style.filter = 'drop-shadow(0 0 20px rgba(181, 189, 255, 0.7))';
     document.getElementById('ch2').style.scale = '1';
+    document.getElementById('ch2').style.filter = 'none';
     document.getElementById('pl1').innerHTML = "";
     document.getElementById('pl2').innerHTML = "";
 
